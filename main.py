@@ -11,8 +11,8 @@ import pandas as pd
 from utils import *
 
 #Download Model Weights
-!curl -L "https://drive.usercontent.google.com/download?id={1--ZhI43tn9NdB-dDmYxP0xDFP873GX07}&confirm=xxx" -o "trained_resnet_state_dict.pth"
-!curl -L "https://drive.usercontent.google.com/download?id={1FL9kSke0UWUC4VDKFez5Uv9MqHqQj3RL}&confirm=xxx" -o "yolov8m.pt"
+# !curl -L "https://drive.usercontent.google.com/download?id={1--ZhI43tn9NdB-dDmYxP0xDFP873GX07}&confirm=xxx" -o "trained_resnet_state_dict.pth"
+# !curl -L "https://drive.usercontent.google.com/download?id={1FL9kSke0UWUC4VDKFez5Uv9MqHqQj3RL}&confirm=xxx" -o "yolov8m.pt"
 
 data_transform = A.Compose([
     NumpyToTensor()
@@ -33,7 +33,7 @@ resnet = InceptionResnetV1(
     num_classes=len(class_map)
 ).to(device)
 
-resnet.load_state_dict(torch.load('trained_resnet_state_dict.pth'))
+resnet.load_state_dict(torch.load('trained_resnet_state_dict.pth', map_location=device))
 
 resnet.eval()
 
