@@ -1,3 +1,5 @@
 facialenv
 trained_resnet_state_dict.pth
 yolov8m.pt
+__pycache__
+Attendance_Records.csv
