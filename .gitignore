@@ -1,5 +1,4 @@
-facialenv
-trained_resnet_state_dict.pth
-yolov8m.pt
+.venv
 __pycache__
+InceptionResnetV1_state_dict.pth
 Attendance_Records.csv
