@@ -10,7 +10,7 @@ To run:
 
 4. Download Model Weights by running this commands in the terminal("curl" for Linux Users, "curl.exe" for windows Users)
 
-    ```curl.exe -L "https://drive.usercontent.google.com/download?id={1--ZhI43tn9NdB-dDmYxP0xDFP873GX07}&confirm=xxx" -o "trained_resnet_state_dict.pth"```
+    ```curl.exe -L "https://drive.usercontent.google.com/download?id={1486FAkWkeZB06gncSoMvdsI4OAbhdmx2}&confirm=xxx" -o "InceptionResnetV1_state_dict.pth"```
 
     ```curl.exe -L "https://drive.usercontent.google.com/download?id={1FL9kSke0UWUC4VDKFez5Uv9MqHqQj3RL}&confirm=xxx" -o "yolov8m.pt"```
 
