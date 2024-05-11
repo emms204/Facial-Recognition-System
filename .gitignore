@@ -1,4 +1,5 @@
 .venv
 __pycache__
 InceptionResnetV1_state_dict.pth
+trained_resnet_state_dict.pth
 Attendance_Records.csv
